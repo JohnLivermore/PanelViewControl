@@ -6,8 +6,9 @@
 
     <StackLayout Margin="100">
         <Button Text="Show Panel View Control" Command="{Binding ShowPanelView}" />
-        <local:PanelView IsVisible="{Binding PanelViewVisible}" 
-                         Showing="{Binding PanelShowing}"/>
+        <local:PanelView PanelVisible="{Binding PanelViewVisible}" 
+                         Showing="{Binding PanelShowing}">
+        </local:PanelView>
     </StackLayout>
 
 </ContentPage>
